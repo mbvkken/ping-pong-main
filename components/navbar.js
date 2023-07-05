@@ -9,14 +9,14 @@ export default function Navbar() {
       <Link href="/" passHref>
         <p className={`${styles.navlink} ${styles.active}`}>Home</p>
       </Link>
-      <Link href="/about" passHref>
-        <p className={styles.navlink}>About</p>
+      <Link href="/players" passHref>
+        <p className={styles.navlink}>Players</p>
       </Link>
-      <Link href="/contact" passHref>
-        <p className={styles.navlink}>Contact</p>
+      <Link href="/tournament" passHref>
+        <p className={styles.navlink}>Tournament</p>
       </Link>
-      <Link href="/mypage" passHref>
-        <p className={styles.navlink}>My Page</p>
+      <Link href="/schedule" passHref>
+        <p className={styles.navlink}>Schedule</p>
       </Link>
     </nav>
   )

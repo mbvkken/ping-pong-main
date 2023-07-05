@@ -5,7 +5,7 @@ module.exports = nextConfig
 // next.config.js
 module.exports = {
     images: {
-      domains: ['racketinsight.com', 'images.unsplash.com', 's7d2.scene7.com'],
+      domains: ['racketinsight.com', 'images.unsplash.com', 's7d2.scene7.com', 'upload.wikimedia.org'],
     },
   }
   

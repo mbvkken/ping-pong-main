@@ -1,18 +1,30 @@
 import Image from 'next/image'
 import Navbar from '../components/navbar'
+import styles from '../components/Navbar.module.css' // Import the CSS Module
 
 export default function Home() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', gap: '20px' }}>
-      <p style={{ fontSize: '20px', fontWeight: 'bold', textAlign: 'center' }}>Telia Ping-Pong App</p>
-      <Image 
-        src="https://s7d2.scene7.com/is/image/TWCNews/pingpong_savannatomei_wi_0417?wid=1250&fit=stretch%2C+1" 
-        alt="Ping Pong Ball" 
-        width={500} 
-        height={300} 
-        layout="responsive"
-      />
-      <Navbar />
+    <div className={styles.container}>
+      
+      <div className={styles.hero}>
+        <Image 
+            className={styles.logo}
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Telia_Scandinavia_Logo.svg/1200px-Telia_Scandinavia_Logo.svg.png" 
+            alt="Your Logo"
+            width={200}
+            height={340} 
+            layout="responsive"
+        />
+        <Navbar />
+        <Image 
+            className={styles.pingPongImage}
+            src="https://s7d2.scene7.com/is/image/TWCNews/pingpong_savannatomei_wi_0417?wid=1250&fit=stretch%2C+1" 
+            alt="Ping Pong Ball" 
+            width={200}
+            height={340} 
+            layout="responsive"
+        />
+      </div>
     </div>
   );
 }
